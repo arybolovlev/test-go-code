@@ -15,7 +15,7 @@ type fullName struct {
 }
 
 func (fn *fullName) getFirstName() string {
-	return fn.firstName
+	return Title(fn.firstName)
 }
 
 func Title(s string) string {
