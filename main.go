@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func c() {
 	f := fullName{firstName: "Sasha"}
@@ -13,4 +16,8 @@ type fullName struct {
 
 func (fn *fullName) getFirstName() string {
 	return fn.firstName
+}
+
+func Title(s string) string {
+	return strings.Title(s)
 }
